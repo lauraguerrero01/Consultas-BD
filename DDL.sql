@@ -6,7 +6,7 @@ USE marcas_tec;
 CREATE TABLE Fabricante (
 	codigo INT (10) NOT NULL auto_increment,
 	nombre varchar (100),
-    PRIMARY KEY (Fabricante)
+    PRIMARY KEY (codigo)
 );
 
 CREATE TABLE Producto (
@@ -14,7 +14,7 @@ CREATE TABLE Producto (
 	nombre varchar (100),
 	precio double,
 	codigo_fabricante INT (10),
-	PRIMARY KEY (Producto)
+	PRIMARY KEY (codigo)
 
 );
 
